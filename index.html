@@ -84,6 +84,21 @@
             font-size: 24px;
             color: #333;
         }
+        .side-by-side-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 40px 40px 40px;
+        }
+        .container {
+            width: calc(50% - 5px);
+            height: 200px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +119,11 @@
     <div class="gif-placeholder">GIF/loop video here</div>
 
     <div class="catchphrase-container">CATCHPHRASE HERE</div>
+
+    <div class="side-by-side-container">
+        <div class="container">Container 1</div>
+        <div class="container">Container 2</div>
+    </div>
 
     <!-- Main content of the page goes here -->
 
