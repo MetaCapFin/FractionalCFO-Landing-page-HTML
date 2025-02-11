@@ -18,6 +18,11 @@
             justify-content: space-between;
             align-items: center;
         }
+        header {
+            position: fixed;
+           : 100%;
+            z-index: 1000;
+        }
         nav a {
             color: white;
             margin: 0 15px;
@@ -43,7 +48,7 @@
             align-items: center;
             padding: 20px;
             background-color: #f4f4f4;
-            margin-top: 20px;
+            margin-top: 60px; /* Adjusted for fixed header */
             margin-bottom: 20px;
         }
         .sub-header h1 {
@@ -125,10 +130,14 @@
             font-size: 18px;
             color: #333;
         }
+        footer {
+            position: relative;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <a href="#about-us">About Us</a>
             <a href="#fractional-cfo-services">Fractional CFO Services</a>
@@ -162,7 +171,7 @@
 
     <!-- Main content of the page goes here -->
 
-    <footer>
+    <footer id="footer">
         <nav>
             <a href="#about-us">About Us</a>
             <a href="#fractional-cfo-services">Fractional CFO Services</a>
@@ -170,5 +179,23 @@
         </nav>
         <a href="#contact-us" class="contact-button">CONTACT US</a>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            var footer = document.getElementById('footer');
+            var footerRect = footer.getBoundingClientRect();
+            var windowHeight = window.innerHeight;
+
+            if (footerRect.top <= windowHeight) {
+                header.style.position = 'absolute';
+                header.style.bottom = (windowHeight - footerRect.top) + 'px';
+            } else {
+                header.style.position = 'fixed';
+                header.style.top = '0';
+                header.style.bottom = 'auto';
+            }
+        });
+    </script>
 </body>
 </html>
