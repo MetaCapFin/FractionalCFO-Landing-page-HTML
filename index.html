@@ -160,10 +160,11 @@
         .placeholders {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 50px; /* Padding equal to the top padding */
         }
         .placeholder {
             width: calc(25% - 15px);
-            height: 150px;
+            height: calc(25% - 15px); /* Make them squares */
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
