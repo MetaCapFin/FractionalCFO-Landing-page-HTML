@@ -31,11 +31,30 @@
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-           ;
+            border-radius: 5px;
             margin-right: 20px;
         }
         .contact-button:hover {
             background-color: #ff8533;
+        }
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+        }
+        .sub-header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -48,6 +67,11 @@
         </nav>
         <a href="#contact-us" class="contact-button">CONTACT US</a>
     </header>
+
+    <div class="sub-header">
+        <h1>BRAND NAME</h1>
+        <div class="logo-placeholder"></div>
+    </div>
 
     <!-- Main content of the page goes here -->
 
