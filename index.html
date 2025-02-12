@@ -24,14 +24,13 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-        }
-        nav a {
+        {
             color: white;
             margin: 0 15px;
             text-decoration: none;
         }
         nav a:hover {
-           -decoration: underline;
+            text-decoration: underline;
         }
         .contact-button {
             background-color: #ff6600;
@@ -215,6 +214,52 @@
             padding-left: 20px;
             text-align: left;
         }
+        .key-values-container {
+            width: calc(100% - 80px);
+            margin: 50px 40px;
+            text-align: center;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            padding: 20px 0;
+        }
+        .key-values-container h2 {
+            margin-bottom: 50px;
+        }
+        .key-values-placeholders {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px; /* Padding equal to the top padding */
+        }
+        .key-values-placeholder {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+            margin: 0 5px; /* Reduced margin for closer spacing */
+        }
+        .additional-container {
+            width: calc(100% - 80px);
+            margin: 50px 40px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .additional-container .half-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .half-container .left, .half-container .right {
+            width: calc(50% - 10px);
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -228,7 +273,7 @@
     </header>
 
     <div class="sub-header" style="margin-top: 70px;">
-        <div class="logo-placeholder">LOGO HERE</div>
+          <div class="logo-placeholder">LOGO HERE</div>
         <h1>BRAND NAME</h1>
     </div>
 
@@ -273,7 +318,7 @@
                     <li>Main Feature 3</li>
                     <li>Main Feature 4</li>
                 </ul>
-                </div>
+            </div>
             <div class="new-placeholder">
                 <h3>Fractional CFO Monthly Support</h3>
                 <ul>
@@ -283,6 +328,29 @@
                     <li>Main Feature 4</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="key-values-container">
+        <h2>KEY VALUES</h2>
+        <div class="key-values-placeholders">
+            <div class="key-values-placeholder">Value 1</div>
+            <div class="key-values-placeholder">Value 2</div>
+            <div class="key-values-placeholder">Value 3</div>
+            <div class="key-values-placeholder">Value 4</div>
+            <div class="key-values-placeholder">Value 5</div>
+        </div>
+        <a href="#schedule-meeting" class="schedule-button">SCHEDULE A MEETING</a>
+    </div>
+
+    <div class="additional-container">
+        <div class="half-container">
+            <div class="left">About Us</div>
+            <div class="right"></div>
+        </div>
+        <div class="half-container">
+            <div class="left"></div>
+            <div class="right">Intro to Brochure</div>
         </div>
     </div>
 
