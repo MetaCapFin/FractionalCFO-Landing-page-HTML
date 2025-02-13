@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, rgba(128, 0, 128, 0.3), rgba(0, 255, 255, 0.3)), black;
+            background: linear-gradient(to right, rgba(0, 255, 255, 0.3), rgba(128, 0, 128, 0.3)), black;
             color: white;
             min-height: 100vh;
             display: flex;
@@ -44,16 +44,17 @@
         }
 
         .contact-button, .schedule-button, .download-button, .subscribe-button {
-            background-color: #ff6600;
+            background: linear-gradient(to right, #00ffff, #800080);
             color: white;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 20px;
             margin-right: 20px;
+            border: none;
         }
 
         .contact-button:hover, .schedule-button:hover, .download-button:hover, .subscribe-button:hover {
-            background-color: #ff8533;
+            background: linear-gradient(to right, #33ffff, #993399);
         }
 
         .sub-header {
@@ -238,7 +239,7 @@
 
     <script>
         window.addEventListener('scroll', function() {
-              var header = document.getElementById('header');
+            var header = document.getElementById('header');
             var footer = document.getElementById('footer');
             var footerRect = footer.getBoundingClientRect();
             var windowHeight = window.innerHeight;
