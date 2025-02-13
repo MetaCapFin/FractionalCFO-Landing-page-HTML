@@ -43,10 +43,21 @@
             text-decoration: underline;
         }
 
-        .contact-button, .schedule-button, .download-button, .subscribe-button {
+        .contact-button, .download-button, .subscribe-button {
             background: linear-gradient(to right, #00ffff, #800080);
             color: white;
             padding: 20px 20px; /* 20px padding above and below, 20px on the sides */
+            text-decoration: none;
+            border-radius: 20px;
+            margin-right: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5); /* White translucent border */
+            transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+        }
+
+        .schedule-button {
+            background: linear-gradient(to right, #00ffff, #800080);
+            color: white;
+            padding: 20px; /* 20px padding all around */
             text-decoration: none;
             border-radius: 20px;
             margin-right: 20px;
@@ -101,7 +112,7 @@
             height: 300px;
         }
 
-        .catchphrase-container, .mission-container, .fractional-cfo-container, .new-container, .key-values-container, .additional-container {
+             .catchphrase-container, .mission-container, .fractional-cfo-container, .new-container, .key-values-container, .additional-container {
             width: calc(100% - 80px);
             margin: 40px;
             text-align: center;
